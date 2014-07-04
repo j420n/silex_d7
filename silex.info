@@ -19,4 +19,4 @@ dependencies[] = admin_menu
 dependencies[] = features
 dependencies[] = strongarm
 
-files[] = silex_d7.profile
+files[] = silex.profile
