@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Silex Content feature.
+ */
+
+include_once 'silex_content.features.inc';
