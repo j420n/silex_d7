@@ -1,7 +1,10 @@
 name = Silex Consulting
 description = Silex Consulting Drupal 7 website
 core = 7.x
+description = Start with only a few modules enabled.
+version = VERSION
 
+dependencies[] = dblog
 dependencies[] = block
 dependencies[] = contextual
 dependencies[] = help
