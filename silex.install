@@ -14,15 +14,8 @@
 function silex_install() {
   // Enable some standard blocks.
 
-    //enable themes
-  	$themes = array(
-  		'theme_default' => 'bootstrap',
-  		'admin_theme' => 'bootstrap'
-  	);
-    theme_enable($themes);
+  $default_theme = variable_get('theme_default', 'stark');
 
-  $default_theme = variable_get('theme_default', 'bootstrap');
-  
   $values = array(
     array(
       'module' => 'system',
@@ -80,6 +73,20 @@ function silex_install() {
     $query->values($record);
   }
   $query->execute();
+
+  //enable themes
+	$themes = array(
+		'theme_default' => 'bootstrap',
+		'admin_theme' => 'seven'
+	);
+  theme_enable($themes);
+
+  foreach ($themes as $key => $theme) {
+    if (!is_numeric($key)) {
+      variable_set($key, $theme);
+    }
+  }
+  theme_disable(array('stark'));
 
   // Allow visitor account creation, but with administrative approval.
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
