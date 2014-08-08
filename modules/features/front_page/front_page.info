@@ -1,0 +1,13 @@
+name = Front Page
+description = Provides default types for silex bootstrap sub theme
+core = 7.x
+package = Silex Features
+version = 7.x-1.0-beta1
+project = front_page
+dependencies[] = features
+dependencies[] = floating_block
+dependencies[] = image
+features[features_api][] = api:1
+features[field][] = node-front_page_sliders-body
+features[field][] = node-front_page_sliders-field_imagw
+features[node][] = front_page_sliders
