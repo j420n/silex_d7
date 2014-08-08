@@ -20,5 +20,6 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = admin_menu
 dependencies[] = features
+dependencies[] = floating_block
 
 files[] = silex.profile

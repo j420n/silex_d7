@@ -12,6 +12,7 @@ projects[features][version] = "1.0"
 
 projects[jquery_update][version] = "2.2"
 
+projects[floating_block][version] = "1.2"
 
 ; Themes
 projects[bootstrap][type] = "theme"
