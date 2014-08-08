@@ -13,7 +13,16 @@
  */
 function silex_install() {
   // Enable some standard blocks.
+
+    //enable themes
+  	$themes = array(
+  		'theme_default' => 'bootstrap',
+  		'admin_theme' => 'bootstrap'
+  	);
+    theme_enable($themes);
+
   $default_theme = variable_get('theme_default', 'bootstrap');
+  
   $values = array(
     array(
       'module' => 'system',
