@@ -76,7 +76,7 @@ function silex_install() {
 
   //enable themes
 	$themes = array(
-		'theme_default' => 'bootstrap',
+		'theme_default' => 'silex_bootstrap_subtheme',
 		'admin_theme' => 'seven'
 	);
   theme_enable($themes);
