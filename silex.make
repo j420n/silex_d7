@@ -8,8 +8,6 @@ projects[ctools][version] = "1.2"
 
 projects[diff][version] = "3.2"
 
-projects[features][version] = "1.0"
-
 projects[jquery_update][version] = "2.2"
 
 projects[floating_block][version] = "1.2"

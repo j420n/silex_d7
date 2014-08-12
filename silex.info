@@ -19,7 +19,14 @@ dependencies[] = search
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = admin_menu
-dependencies[] = features
 dependencies[] = floating_block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = dashboard
+dependencies[] = menu
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = rdf
 
 files[] = silex.profile
