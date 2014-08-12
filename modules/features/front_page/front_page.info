@@ -9,5 +9,5 @@ dependencies[] = floating_block
 dependencies[] = image
 features[features_api][] = api:1
 features[field][] = node-front_page_sliders-body
-features[field][] = node-front_page_sliders-field_imagw
+features[field][] = node-front_page_sliders-field_image
 features[node][] = front_page_sliders

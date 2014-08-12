@@ -84,14 +84,14 @@ function front_page_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-front_page_sliders-field_imagw'.
-  $fields['node-front_page_sliders-field_imagw'] = array(
+  // Exported field: 'node-front_page_sliders-field_image'.
+  $fields['node-front_page_sliders-field_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_imagw',
+      'field_name' => 'field_image',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -137,7 +137,7 @@ function front_page_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_imagw',
+      'field_name' => 'field_image',
       'label' => 'image',
       'required' => 0,
       'settings' => array(
