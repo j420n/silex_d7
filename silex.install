@@ -282,6 +282,20 @@ function silex_install() {
   );
   taxonomy_vocabulary_save($vocabulary);
 
+  //enable themes
+	$themes = array(
+		'theme_default' => 'silex_bootstrap_subtheme',
+		'admin_theme' => 'seven'
+	);
+  theme_enable($themes);
+
+  foreach ($themes as $key => $theme) {
+    if (!is_numeric($key)) {
+      variable_set($key, $theme);
+    }
+  }
+  theme_disable(array('bartik'));
+
   $field = array(
     'field_name' => 'field_' . $vocabulary->machine_name,
     'type' => 'taxonomy_term_reference',
