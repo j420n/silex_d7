@@ -28,5 +28,6 @@ dependencies[] = shortcut
 dependencies[] = toolbar
 dependencies[] = overlay
 dependencies[] = rdf
+dependencies[] = views
 
 files[] = silex.profile
