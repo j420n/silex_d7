@@ -12,6 +12,9 @@ projects[jquery_update][version] = "2.2"
 
 projects[floating_block][version] = "1.2"
 
+projects[views][version] = "3.7"
+projects[views][subdir] = "contrib"
+
 ; Themes
 projects[bootstrap][type] = "theme"
 projects[bootstrap][subdir] = "contrib"
