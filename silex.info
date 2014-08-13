@@ -29,5 +29,6 @@ dependencies[] = toolbar
 dependencies[] = overlay
 dependencies[] = rdf
 dependencies[] = views
+dependencies[] = jcarousel
 
 files[] = silex.profile
