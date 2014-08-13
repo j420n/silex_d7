@@ -4,6 +4,7 @@ core = 7.x
 base theme = bootstrap
 
 ; Regions
+regions[slider]     = 'Slider'
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
