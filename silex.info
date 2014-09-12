@@ -21,5 +21,6 @@ dependencies[] = file
 dependencies[] = admin_menu
 dependencies[] = features
 dependencies[] = floating_block
+dependencies[] = strongarm
 
 files[] = silex.profile
