@@ -24,7 +24,7 @@ projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
 
 ; Themes
-projects[bootstrap][type] = "theme"
+projects[bootstrap][type] = "libraries"
 projects[bootstrap][subdir] = "custom/silex_bootstrap_subtheme/"
 projects[bootstrap][download][type] = "git"
 projects[bootstrap][download][url] = "git@github.com:twbs/bootstrap.git"
