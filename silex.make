@@ -14,6 +14,10 @@ projects[jquery_update][version] = "2.2"
 
 projects[floating_block][version] = "1.2"
 
+projects[colorbox][version] = "2.4"
+
+projects[strongarm][version] = "2.0"
+
 projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
 
@@ -21,5 +25,5 @@ projects[views][subdir] = "contrib"
 projects[bootstrap][type] = "theme"
 projects[bootstrap][subdir] = "contrib"
 projects[bootstrap][download][type] = "git"
-projects[bootstrap][download][url] = "http://git.drupal.org/project/bootstrap.git"
-projects[bootstrap][download][tag] = "7.x-3.0-rc2"
+projects[bootstrap][download][url] = "http://git.drupal.org/project/zen.git"
+projects[bootstrap][download][tag] = "7.x-5.x"

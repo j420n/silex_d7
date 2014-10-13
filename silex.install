@@ -69,8 +69,8 @@ function silex_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
-  $admin_theme = 'seven';
+  $default_theme = variable_get('theme_default', 'zen');
+  $admin_theme = 'zen';
   $blocks = array(
     array(
       'module' => 'system',
@@ -284,8 +284,8 @@ function silex_install() {
 
   //enable themes
 	$themes = array(
-		'theme_default' => 'silex_bootstrap_subtheme',
-		'admin_theme' => 'seven'
+		'theme_default' => 'zen',
+		'admin_theme' => 'zen'
 	);
   theme_enable($themes);
 
@@ -439,7 +439,7 @@ function silex_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'seven')
+    ->condition('name', 'zen')
     ->execute();
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
