@@ -31,8 +31,7 @@ projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
 
 ; Themes
-projects[zen][subdir] = "custom/zen"
-projects[zen][download][type] = "git"
-projects[zen][download][url] = "http://git.drupal.org/project/zen.git"
-projects[zen][download][tag] = "7.x-5.x"
+projects[bootstrap][subdir] = "custom/bootstrap"
+projects[bootstrap][download][type] = "git"
+projects[bootstrap][download][url] = "http://git.drupal.org/project/bootstrap.git"
 
