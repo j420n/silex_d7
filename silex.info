@@ -4,6 +4,7 @@ core = 7.x
 description = Start with only a few modules enabled.
 version = VERSION
 
+regions[highlighted] = Highlighted
 dependencies[] = dblog
 dependencies[] = block
 dependencies[] = contextual
