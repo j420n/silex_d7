@@ -25,7 +25,7 @@ projects[floating_block][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
 
-projects[colorbox][version] = "2.4"
+projects[colorbox][version] = "2.8"
 
 projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
