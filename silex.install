@@ -284,8 +284,8 @@ function silex_install() {
 
   //enable themes
 	$themes = array(
-		'theme_default' => 'zen',
-		'admin_theme' => 'zen'
+		'theme_default' => 'silex-theme',
+		'admin_theme' => 'silex-theme',
 	);
   theme_enable($themes);
 
