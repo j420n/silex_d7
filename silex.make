@@ -34,7 +34,6 @@ projects[libraries][version] = "2.2"
 projects[libraries][subdir] = "contrib"
 
 ; Themes
-projects[bootstrap][subdir] = "custom/bootstrap"
-projects[bootstrap][download][type] = "git"
-projects[bootstrap][download][url] = "http://git.drupal.org/project/bootstrap.git"
+;projects[bootstrap][download][type] = "git"
+;projects[bootstrap][download][url] = "http://git.drupal.org/project/bootstrap.git"
 
