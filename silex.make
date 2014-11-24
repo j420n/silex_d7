@@ -30,6 +30,9 @@ projects[colorbox][version] = "2.8"
 projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
 
+projects[libraries][version] = "2.2"
+projects[libraries][subdir] = "contrib"
+
 ; Themes
 projects[bootstrap][subdir] = "custom/bootstrap"
 projects[bootstrap][download][type] = "git"
