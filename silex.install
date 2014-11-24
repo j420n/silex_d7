@@ -69,8 +69,8 @@ function silex_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'zen');
-  $admin_theme = 'zen';
+  $default_theme = variable_get('theme_default', 'silex-theme');
+  $admin_theme = 'silex-theme';
   $blocks = array(
     array(
       'module' => 'system',
