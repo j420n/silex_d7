@@ -283,8 +283,8 @@ position: fixed;
 @media (min-height: 900px) {
 
     .carousel img {
-        width: auto;
-        min-height: 665px;
+        width: 100%;
+        min-height: 850px;
     }
 }
 
@@ -292,7 +292,7 @@ position: fixed;
 
     .carousel img {
         width: auto;
-        min-height: 650px;
+        min-height: 750px;
     }
 }
 
@@ -310,8 +310,7 @@ position: fixed;
         height: auto;
     }
     .carousel img {
-        width: auto;
-        height: 711px;
+        width: 100%;
     }
 
     .featurette {
@@ -344,7 +343,7 @@ position: fixed;
         height: 300px;
     }
     .carousel img {
-        height: 571px;
+        height: 717px;
     }
     .carousel-caption {
         width: 100%;
