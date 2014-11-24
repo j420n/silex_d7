@@ -353,9 +353,18 @@ position: fixed;
         font-size: 30px;
         vertical-align: middle;
     }
-    .carousel-caption .lead,
+    .carousel-caption .lead {
+        width: 50%;
+        margin: auto;
+        padding: 50px;
+        line-height: 1.25;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0,0,0,.9);
+        background: rgba(0,109,204,0.1);
+        border-radius: 100px;
+    }
     .carousel-caption .btn {
-        font-size: 18px;
+        margin-top: 10px;
     }
     .marketing .span4 + .span4 {
         margin-top: 40px;
