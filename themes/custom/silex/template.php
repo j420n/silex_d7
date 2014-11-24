@@ -9,10 +9,10 @@ function silex_preprocess_page(&$variables) {
   $variables['footer_links'] = FALSE;
     // Build links
     $tree = menu_tree_page_data('footer-menu');
-    $variables['footer_menu'] = twitter_bootstrap_menu_navigation_links($tree);
+    $variables['footer_menu'] = bootstrap_menu_navigation_links($tree);
     
     // Build list
-    $variables['footer_links'] = theme('twitter_bootstrap_links', array(
+    $variables['footer_links'] = theme('bootstrap_links', array(
       'links' => $variables['footer_menu'],
       'attributes' => array(
         'id' => 'footer-menu',
@@ -26,7 +26,7 @@ function silex_preprocess_page(&$variables) {
     ));
   
   // Replace tabs with dropw down version
-  $variables['tabs']['#primary'] = _twitter_bootstrap_local_tasks($variables['tabs']['#primary']);
+  $variables['tabs']['#primary'] = _bootstrap_local_tasks($variables['tabs']['#primary']);
 }
 
 function spv($vars){
