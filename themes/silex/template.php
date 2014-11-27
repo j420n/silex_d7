@@ -12,7 +12,7 @@ function silex_preprocess_page(&$variables) {
     $variables['footer_menu'] = bootstrap_menu_navigation_links($tree);
     
     // Build list
-    $variables['footer_links'] = theme('twitter_bootstrap_links', array(
+    $variables['footer_links'] = theme('bootstrap_links', array(
       'links' => $variables['footer_menu'],
       'attributes' => array(
         'id' => 'footer-menu',
@@ -25,7 +25,7 @@ function silex_preprocess_page(&$variables) {
       ),
     ));
   
-  // Replace tabs with dropw down version
+  // Replace tabs with drop down version
   $variables['tabs']['#primary'] = _bootstrap_local_tasks($variables['tabs']['#primary']);
 }
 
