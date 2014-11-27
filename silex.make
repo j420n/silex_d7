@@ -34,10 +34,6 @@ projects[libraries][version] = "2.2"
 projects[libraries][subdir] = "contrib"
 
 ; Themes
-projects[bootstrap][subdir] = "custom/bootstrap"
+projects[bootstrap][subdir] = "bootstrap"
 projects[bootstrap][download][type] = "git"
 projects[bootstrap][download][url] = "http://git.drupal.org/project/bootstrap.git"
-
-projects[bootstrap][subdir] = "custom/silex-theme"
-projects[silex-theme][download][type] = "git"
-projects[silex-theme][download][url] = "http://github.com/j420n/silex-theme.git"
