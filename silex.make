@@ -33,9 +33,6 @@ projects[views][subdir] = "contrib"
 projects[libraries][version] = "2.2"
 projects[libraries][subdir] = "contrib"
 
-projects[silex_content][version] = "1.0"
-projects[silex_content][subdir] = "contrib"
-
 projects[diff][version] = "3.2"
 projects[diff][subdir] = "contrib"
 
