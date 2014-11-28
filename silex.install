@@ -12,6 +12,26 @@
  * @see system_install()
  */
 function silex_install() {
+
+  // Enable default theme
+  drupal_system_enable('theme', 'silex-theme');
+  variable_set('theme_default', 'silex-theme');
+  $admin_theme = 'silex-theme';
+
+  // Disable default logo and enter new logo path
+  variable_set('theme_silex-theme_settings', array(
+      'default_logo' => 0,
+      'logo_path' => 'themes/silex/images/sclogo.png',
+      'toggle_name' => 0,
+      'toggle_slogan' => 0,
+      'toggle_mission' => 1,
+      'toggle_primary_links' => 1,
+      'toggle_secondary_links' => 1,
+      'toggle_node_user_picture' => 0,
+      'toggle_comment_user_picture' => 0,
+      'toggle_search' => 0,
+  ));
+
   // Add text formats.
   $filtered_html_format = array(
     'format' => 'filtered_html',
@@ -69,8 +89,6 @@ function silex_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'silex-theme');
-  $admin_theme = 'silex-theme';
   $blocks = array(
     array(
       'module' => 'system',
@@ -439,8 +457,8 @@ function silex_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'zen')
+    ->condition('name', 'bootstrap')
     ->execute();
-  variable_set('admin_theme', 'seven');
+  variable_set('admin_theme', 'bootstrap');
   variable_set('node_admin_theme', '1');
 }
