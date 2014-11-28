@@ -5,7 +5,7 @@ api = 2
 projects[admin_menu][version] = "3.0-rc3"
 projects[admin_menu][subdir] = "contrib"
 
-projects[ctools][version] = "1.2"
+projects[ctools][version] = "1.4"
 projects[ctools][subdir] = "contrib"
 
 projects[diff][version] = "3.2"
@@ -16,7 +16,7 @@ projects[jcarousel][version] = "2.6"
 projects[features][version] = "1.0"
 projects[features][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.2"
+projects[jquery_update][version] = "2.4"
 projects[jquery_update][subdir] = "contrib"
 
 projects[floating_block][version] = "1.2"
@@ -27,11 +27,23 @@ projects[strongarm][subdir] = "contrib"
 
 projects[colorbox][version] = "2.8"
 
-projects[views][version] = "3.7"
+projects[views][version] = "3.8"
 projects[views][subdir] = "contrib"
 
 projects[libraries][version] = "2.2"
 projects[libraries][subdir] = "contrib"
+
+projects[silex_content][version] = "1.0"
+projects[silex_content][subdir] = "contrib"
+
+projects[diff][version] = "3.2"
+projects[diff][subdir] = "contrib"
+
+projects[entity][version] = "1.5"
+projects[entity][subdir] = "contrib"
+
+projects[paragraphs][version] = "1.0-beta4"
+projects[paragraphs][subdir] = "contrib"
 
 ; Themes
 projects[bootstrap][subdir] = "bootstrap"
