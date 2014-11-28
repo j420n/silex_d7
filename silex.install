@@ -126,7 +126,6 @@ function silex_install() {
   $features = array(
       'silex_content'
   );
-  features_revert($features);
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
