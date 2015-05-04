@@ -35,65 +35,68 @@ function silex_install() {
   variable_set('admin_theme', $admin_theme);
   // activate admin theme when editing a node
   variable_set('node_admin_theme', '1');
-  $blocks = array(
+
+  // Enable some standard blocks.
+  $values = array(
       array(
-          'module' => 'system',
-          'delta' => 'main',
-          'theme' => $default_theme,
-          'status' => 1,
-          'weight' => 0,
-          'region' => 'content',
-          'pages' => '',
-          'cache' => -1,
+        'module' => 'system',
+        'delta' => 'main',
+        'theme' => $default_theme,
+        'status' => 1,
+        'weight' => 0,
+        'region' => 'content',
+        'pages' => '',
+        'cache' => -1,
       ),
       array(
-          'module' => 'user',
-          'delta' => 'login',
-          'theme' => $default_theme,
-          'status' => 1,
-          'weight' => 0,
-          'region' => 'sidebar_first',
-          'pages' => '',
-          'cache' => -1,
+        'module' => 'user',
+        'delta' => 'login',
+        'theme' => $default_theme,
+        'status' => 1,
+        'weight' => 0,
+        'region' => 'sidebar_first',
+        'pages' => '',
+        'cache' => -1,
       ),
       array(
-          'module' => 'system',
-          'delta' => 'help',
-          'theme' => $default_theme,
-          'status' => 1,
-          'weight' => -10,
-          'region' => 'content',
-          'pages' => '',
-          'cache' => -1,
+        'module' => 'system',
+        'delta' => 'navigation',
+        'theme' => $default_theme,
+        'status' => 1,
+        'weight' => 0,
+        'region' => 'sidebar_first',
+        'pages' => '',
+        'cache' => -1,
       ),
       array(
-          'module' => 'system',
-          'delta' => 'main',
-          'theme' => $admin_theme,
-          'status' => 1,
-          'weight' => 0,
-          'region' => 'content',
-          'pages' => '',
-          'cache' => -1,
+        'module' => 'system',
+        'delta' => 'management',
+        'theme' => $default_theme,
+        'status' => 1,
+        'weight' => 1,
+        'region' => 'sidebar_first',
+        'pages' => '',
+        'cache' => -1,
       ),
       array(
-          'module' => 'system',
-          'delta' => 'help',
-          'theme' => $admin_theme,
-          'status' => 1,
-          'weight' => 0,
-          'region' => 'help',
-          'pages' => '',
-          'cache' => -1,
+        'module' => 'system',
+        'delta' => 'help',
+        'theme' => $default_theme,
+        'status' => 1,
+        'weight' => 0,
+        'region' => 'help',
+        'pages' => '',
+        'cache' => -1,
       ),
-  );
+    );
+
   // drop system / user blocks to ensure correct building
   db_delete('block')->condition('module', 'system')->execute();
   db_delete('block')->condition('module', 'user')->execute();
   // add in our blocks defined above
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
-  foreach ($blocks as $block) {
-    $query->values($block);
+  foreach ($values as $record) {
+    $query->values($record);
   }
   $query->execute();
 
@@ -132,7 +135,7 @@ function silex_install() {
   drupal_get_messages();
 
   // Disable default logo and enter new logo path
-  variable_set('theme_silex-theme_settings', array(
+  variable_set('theme_silex_settings', array(
       'default_logo' => 0,
       'logo_path' => 'themes/silex/images/sclogo.png',
       'toggle_name' => 0,
@@ -297,137 +300,6 @@ function silex_install() {
   $handler->display->display_options['fields']['field_target']['field'] = 'field_target';
 
   //END CAROUSEL VIEW
-
-
-
-  // Enable some standard blocks.
-  $blocks = array(
-    array(
-      'module' => 'system',
-      'delta' => 'main',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'search',
-      'delta' => 'form',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -1,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'node',
-      'delta' => 'recent',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'dashboard_main',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'user',
-      'delta' => 'login',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'navigation',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'powered-by',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'footer',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'help',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'help',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'main',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'help',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'help',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'user',
-      'delta' => 'login',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'user',
-      'delta' => 'new',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'dashboard_sidebar',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'search',
-      'delta' => 'form',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => -10,
-      'region' => 'dashboard_sidebar',
-      'pages' => '',
-      'cache' => -1,
-    ),
-  );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
-  foreach ($blocks as $block) {
-    $query->values($block);
-  }
-  $query->execute();
 
   // Insert default pre-defined node types into the database. For a complete
   // list of available node type attributes, refer to the node type API
