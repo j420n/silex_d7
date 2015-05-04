@@ -514,8 +514,8 @@ function silex_install() {
 
   //enable themes
 	$themes = array(
-		'theme_default' => 'silex-theme',
-		'admin_theme' => 'silex-theme',
+		'theme_default' => 'silex',
+		'admin_theme' => 'silex',
 	);
   theme_enable($themes);
 
