@@ -43,6 +43,8 @@ projects[paragraphs][version] = "1.0-beta4"
 projects[paragraphs][subdir] = "contrib"
 
 ; Themes
-projects[bootstrap][subdir] = "bootstrap"
+projects[bootstrap][type] = "theme"
+projects[bootstrap][subdir] = "contrib"
 projects[bootstrap][download][type] = "git"
 projects[bootstrap][download][url] = "http://git.drupal.org/project/bootstrap.git"
+projects[bootstrap][download][tag] = "7.x.3.0"
