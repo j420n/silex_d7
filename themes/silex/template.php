@@ -25,7 +25,7 @@ function silex_preprocess_page(&$variables) {
     ));
   
   // Replace tabs with drop down version
-  $variables['tabs']['#primary'] = _bootstrap_local_tasks($variables['tabs']['#primary']);
+  //$variables['tabs']['#primary'] = _bootstrap_local_tasks($variables['tabs']['#primary']);
 }
 
 function spv($vars){
