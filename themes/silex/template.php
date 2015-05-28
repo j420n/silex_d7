@@ -5,6 +5,8 @@
  * @see page.tpl.php
  */
 function silex_preprocess_page(&$variables) {
+  //Logo
+  $variables['logo'] = '/profiles/silex/themes/silex/images/sclogo.png';
   // Primary nav
   $variables['footer_links'] = FALSE;
     // Build links
