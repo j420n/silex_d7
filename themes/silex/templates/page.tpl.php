@@ -15,14 +15,14 @@
             </div>
             <!-- Place all navbar contents you want collapsed within .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse pull-right" style="height: 0px; ">
-              <?php if ($primary_nav): ?>
-                <?php print $primary_nav; ?>
+              <?php if (!empty($primary_nav)): ?>
+                <?php print render($primary_nav); ?>
               <?php endif; ?>
 
-              <?php if ($search): print render($search); endif; ?>
+              <?php if (!empty($search)): print render($search); endif; ?>
 
-              <?php if ($secondary_nav): ?>
-                <?php print $secondary_nav; ?>
+              <?php if (!empty($secondary_nav)): ?>
+                <?php print render($secondary_nav); ?>
               <?php endif; ?>
             </div><!--/.nav-collapse -->
         </div><!-- /.navbar-inner -->
@@ -71,7 +71,7 @@
     <div class="container">
         <div class="row">
             <div class="span12">
-                <a href="#"><img src="<?php print $logo; ?>" alt="Silex Resources"></a>
+                <a href="#"><img src="<?php print $logo; ?>" alt="Silex Consulting"></a>
             </div>
         </div>
         <div class="row links-horizontal">
@@ -81,11 +81,11 @@
         </div>
         <div class="row">
             <div class="span12">
-                <a href="http://twitter.com/silexresources" class="twitter-link">Follow us on Twitter</a>
+                <a href="http://twitter.com/silexconsulting" class="twitter-link">Follow us on Twitter</a>
             </div>
         </div>
 
-        <p>Copyright Silex Resources Ltd. All rights reserved.</p>
+        <p>Copyright Silex Consulting Ltd. All rights reserved.</p>
     </div>
 </footer>
 
