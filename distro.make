@@ -5,5 +5,5 @@ projects[drupal][version] = "7.38"
 
 projects[silex][type] = "profile"
 projects[silex][download][type] = "git"
-projects[silex][download][url] = "de.v:/var/cache/git/silex_d7.git"
+projects[silex][download][url] = "https://github.com/j420n/silex_d7.git"
 projects[silex][download][branch] = "master"
