@@ -5,41 +5,5 @@
  * @see page.tpl.php
  */
 function silex_preprocess_page(&$variables) {
-  //Logo
-  $variables['logo'] = '/profiles/silex/themes/silex/images/sclogo.png';
-  // Primary nav
-  $variables['footer_links'] = FALSE;
-    // Build links
-    $tree = menu_tree_page_data('footer-menu');
 
-    // Build list
-    $variables['footer_links'] = theme('bootstrap_links', array(
-      'links' => $variables['footer_menu'],
-      'attributes' => array(
-        'id' => 'footer-menu',
-        'class' => array('links'),
-      ),
-      'heading' => array(
-        'text' => "",
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
-    ));
-  
-  // Replace tabs with drop down version
-  //$variables['tabs']['#primary'] = _bootstrap_local_tasks($variables['tabs']['#primary']);
-}
-
-function spv($vars){
-  print "################################# DEFINED VARS #################################\n";
-  foreach ($vars as $var => $val ){
-    $type = gettype($val);
-    if ($type == 'string'){
-     $disp = "\"$val\"";
-    } else { 
-      $disp = $type;
-    }
-    print("->>>>>> $var = $disp\n");
-  }
-  print "############################### END DEFINED VARS ###############################\n";
 }
