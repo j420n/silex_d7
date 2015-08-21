@@ -12,7 +12,7 @@
  * @see system_install()
  */
 function silex_install() {
-  $default_theme = 'silex';
+  $default_theme = 'seven';
   $admin_theme = 'seven';
   // disable all themes
   db_update('system')
@@ -387,8 +387,8 @@ function silex_install() {
 
   //enable themes
 	$themes = array(
-		'theme_default' => 'silex',
-		'admin_theme' => 'silex',
+		'theme_default' => 'seven',
+		'admin_theme' => 'seven',
 	);
   theme_enable($themes);
 
