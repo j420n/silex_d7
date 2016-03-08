@@ -387,8 +387,8 @@ function silex_install() {
 
   //enable themes
 	$themes = array(
-		'theme_default' => 'seven',
-		'admin_theme' => 'seven',
+		'theme_default' => 'silex',
+		'admin_theme' => 'silex',
 	);
   theme_enable($themes);
 
