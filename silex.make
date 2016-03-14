@@ -42,12 +42,9 @@ projects[entity][subdir] = "contrib"
 projects[paragraphs][version] = "1.0-beta4"
 projects[paragraphs][subdir] = "contrib"
 
-; Themes
-projects[bootstrap][type] = "theme"
-projects[bootstrap][download][type] = "git"
-projects[bootstrap][download][url] = "https://git.drupal.org/project/bootstrap.git"
-projects[bootstrap][download][version] = "7.x-4.x"
+projects[bootstrap][version] = "4.x"
 
+; Themes
 projects[silex][type] = "theme"
 projects[silex][download][type] = "git"
 projects[silex][download][url] = "https://github.com/j420n/silex_theme.git"
