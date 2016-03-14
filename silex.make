@@ -47,7 +47,7 @@ projects[bootstrap][type] = "theme"
 projects[bootstrap][subdir] = "silex_theme"
 projects[bootstrap][download][type] = "git"
 projects[bootstrap][download][url] = "https://git.drupal.org/project/bootstrap.git"
-projects[bootstrap][download][version] = "7.x-3.5"
+projects[bootstrap][download][tag] = "7.x-3.5"
 
 projects[silex_theme][type] = "theme"
 projects[silex_theme][download][type] = "git"
