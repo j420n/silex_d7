@@ -138,7 +138,7 @@ function silex_install() {
   // Disable default logo and enter new logo path
   variable_set('theme_silex_settings', array(
       'default_logo' => 0,
-      'logo_path' => 'themes/silex/images/sclogo.png',
+      'logo_path' => '/profiles/silex/themes/silex/images/sclogo.pngg',
       'toggle_name' => 0,
       'toggle_slogan' => 0,
       'toggle_mission' => 1,
