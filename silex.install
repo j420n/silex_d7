@@ -12,8 +12,8 @@
  * @see system_install()
  */
 function silex_install() {
-  $default_theme = 'seven';
-  $admin_theme = 'seven';
+  $default_theme = 'silex_theme';
+  $admin_theme = 'bootstrap';
   // disable all themes
   db_update('system')
       ->fields(array('status' => 0))
