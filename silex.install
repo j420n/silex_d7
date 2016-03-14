@@ -385,18 +385,6 @@ function silex_install() {
   );
   taxonomy_vocabulary_save($vocabulary);
 
-  //enable themes
-	$themes = array(
-		'theme_default' => 'silex_theme',
-		'admin_theme' => 'silex_theme',
-	);
-  theme_enable($themes);
-
-  foreach ($themes as $key => $theme) {
-    if (!is_numeric($key)) {
-      variable_set($key, $theme);
-    }
-  }
   theme_disable(array('bartik'));
 
   $field = array(
@@ -532,4 +520,18 @@ function silex_install() {
     ->execute();
   variable_set('admin_theme', 'bootstrap');
   variable_set('node_admin_theme', '1');
+
+  $enable = array(
+    'theme_default' => 'silex_theme',
+    'admin_theme' => 'bootstrap',
+    //'zen'
+  );
+  theme_enable($enable);
+
+  foreach ($enable as $var => $theme) {
+    if (!is_numeric($var)) {
+      variable_set($var, $theme);
+    }
+  }
+
 }
