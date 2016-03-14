@@ -45,9 +45,9 @@ projects[paragraphs][subdir] = "contrib"
 projects[bootstrap][version] = "4.x"
 
 ; Themes
-projects[silex][type] = "theme"
-projects[silex][download][type] = "git"
-projects[silex][download][url] = "https://github.com/j420n/silex_theme.git"
+projects[silex_theme][type] = "theme"
+projects[silex_theme][download][type] = "git"
+projects[silex_theme][download][url] = "https://github.com/j420n/silex_theme.git"
 
 ;.htaccess patch for Apache 2.4
 https://www.drupal.org/files/issues/1599774-htaccess-apache-2.4-60-D7-backport.patch

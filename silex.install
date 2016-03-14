@@ -136,9 +136,9 @@ function silex_install() {
   drupal_get_messages();
 
   // Disable default logo and enter new logo path
-  variable_set('theme_silex_settings', array(
+  variable_set('theme_silex_theme_settings', array(
       'default_logo' => 0,
-      'logo_path' => '/profiles/silex/themes/silex/images/sclogo.pngg',
+      'logo_path' => '/profiles/silex/themes/silex_theme/images/sclogo.pngg',
       'toggle_name' => 0,
       'toggle_slogan' => 0,
       'toggle_mission' => 1,
@@ -522,7 +522,7 @@ function silex_install() {
   variable_set('node_admin_theme', '1');
 
   $enable = array(
-    'theme_default' => 'silex',
+    'theme_default' => 'silex_theme',
     'admin_theme' => 'bootstrap',
     //'zen'
   );
