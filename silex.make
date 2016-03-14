@@ -46,7 +46,7 @@ projects[paragraphs][subdir] = "contrib"
 projects[bootstrap][type] = "theme"
 projects[bootstrap][download][type] = "git"
 projects[bootstrap][download][url] = "https://git.drupal.org/project/bootstrap.git"
-projects[bootstrap][download][version] = "7.x-3.x"
+projects[bootstrap][download][version] = "7.x-4.x"
 
 projects[silex][type] = "theme"
 projects[silex][download][type] = "git"
