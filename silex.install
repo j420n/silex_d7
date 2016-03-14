@@ -138,7 +138,7 @@ function silex_install() {
   // Disable default logo and enter new logo path
   variable_set('theme_silex_settings', array(
       'default_logo' => 0,
-      'logo_path' => 'themes/silex_theme/images/sclogo.png',
+      'logo_path' => 'themes/silex/images/sclogo.png',
       'toggle_name' => 0,
       'toggle_slogan' => 0,
       'toggle_mission' => 1,
@@ -522,7 +522,7 @@ function silex_install() {
   variable_set('node_admin_theme', '1');
 
   $enable = array(
-    'theme_default' => 'silex_theme',
+    'theme_default' => 'silex',
     'admin_theme' => 'bootstrap',
     //'zen'
   );
