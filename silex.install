@@ -37,8 +37,21 @@ function silex_install() {
   // activate admin theme when editing a node
   variable_set('node_admin_theme', '1');
 
-  // Enable some standard blocks.
+  //Disable overlay module
+  module_disable(array('overlay'),TRUE);
+
+  // Disable/Enable some blocks.
   $values = array(
+      array(
+        'module' => 'silex_content',
+        'delta' => 'View: carousel',
+        'theme' => $default_theme,
+        'status' => 1,
+        'weight' => 0,
+        'region' => 'header',
+        'pages' => '',
+        'cache' => -1,
+      ),
       array(
         'module' => 'system',
         'delta' => 'main',
