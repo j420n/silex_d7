@@ -36,5 +36,6 @@ dependencies[] = jcarousel
 dependencies[] = strongarm
 dependencies[] = features
 dependencies[] = views_ui
+dependencies[] = silex_content
 
 files[] = silex.profile
