@@ -16,10 +16,10 @@ function silex_install() {
   $admin_theme = 'silex_theme';
 
   // disable all themes
-  db_update('system')
-      ->fields(array('status' => 0))
-      ->condition('type', 'theme')
-      ->execute();
+  //db_update('system')
+  //    ->fields(array('status' => 0))
+  //    ->condition('type', 'theme')
+  //    ->execute();
 
   // enable $default_theme
   db_update('system')
