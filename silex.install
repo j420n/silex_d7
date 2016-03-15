@@ -20,22 +20,34 @@ function silex_install() {
       ->fields(array('status' => 0))
       ->condition('type', 'theme')
       ->execute();
+
   // enable $default_theme
   db_update('system')
       ->fields(array('status' => 1))
       ->condition('type', 'theme')
       ->condition('name', $default_theme)
       ->execute();
+  variable_set('theme_default', $default_theme);
+
   // enable $admin_theme
   db_update('system')
       ->fields(array('status' => 1))
       ->condition('type', 'theme')
       ->condition('name', $admin_theme)
       ->execute();
-  variable_set('theme_default', $default_theme);
   variable_set('admin_theme', $admin_theme);
+
   // activate admin theme when editing a node
   variable_set('node_admin_theme', '1');
+
+  //Enable themes again just to be sure!
+  $enabled_themes = array(
+      'theme_default' => 'silex_theme',
+      'admin_theme' => 'silex_theme',
+  );
+
+  theme_enable($enabled_themes);
+
 
   //Disable overlay module
   module_disable(array('overlay'),TRUE);
