@@ -19,7 +19,6 @@ dependencies[] = taxonomy
 dependencies[] = search
 dependencies[] = field_ui
 dependencies[] = file
-dependencies[] = admin_menu
 dependencies[] = floating_block
 dependencies[] = color
 dependencies[] = colorbox
