@@ -58,7 +58,7 @@ function silex_content_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-      'carousel_item' => 'carousel_item',
+    'carousel_item' => 'carousel_item',
   );
 
   /* Display: Block */
@@ -91,8 +91,8 @@ function silex_content_views_default_views() {
   $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-      'image_style' => '',
-      'image_link' => '',
+    'image_style' => '',
+    'image_link' => '',
   );
   /* Field: Content: Call to action */
   $handler->display->display_options['fields']['field_call_to_action']['id'] = 'field_call_to_action';
@@ -159,7 +159,7 @@ function silex_content_views_default_views() {
   $handler->display->display_options['arguments']['field_tags_tid']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['field_tags_tid']['validate']['type'] = 'taxonomy_term';
   $handler->display->display_options['arguments']['field_tags_tid']['validate_options']['vocabularies'] = array(
-      'tags' => 'tags',
+    'tags' => 'tags',
   );
   $handler->display->display_options['arguments']['field_tags_tid']['validate_options']['type'] = 'convert';
   /* Filter criterion: Content: Published */
@@ -224,7 +224,7 @@ function silex_content_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-      'promo_item' => 'promo_item',
+    'promo_item' => 'promo_item',
   );
 
   /* Display: Page */

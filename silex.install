@@ -12,8 +12,8 @@
  * @see system_install()
  */
 function silex_install() {
-  $default_theme = 'silex_theme';
-  $admin_theme = 'silex_theme';
+  $default_theme = 'silex';
+  $admin_theme = 'silex';
 
   theme_disable(array('bartik'));
   // disable all themes
