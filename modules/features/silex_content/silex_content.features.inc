@@ -53,3 +53,32 @@ function silex_content_node_info() {
   );
   return $items;
 }
+
+function silex_content_image_default_styles() {
+    $styles = array();
+
+    // Exported image style: headshots.
+    $styles['headshots'] = array(
+        'name' => 'headshots',
+        'label' => 'headshots',
+        'effects' => array(
+            2 => array(
+                'label' => ' Image Crop',
+                'help' => '',
+                'effect callback' => 'imagefield_crop_image',
+                'form callback' => 'imagefield_crop_image_form',
+                'module' => 'imagefield_crop',
+                'name' => 'imagefield_crop',
+                'data' => array(
+                    'width' => '500',
+                    'height' => '500',
+                    'anchor' => 'center-center',
+                ),
+                'weight' => '1',
+            ),
+        ),
+    );
+
+    return $styles;
+}
+
