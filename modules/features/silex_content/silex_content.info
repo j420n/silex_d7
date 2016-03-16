@@ -1,5 +1,5 @@
 name = Silex Content
-description = Provides Content Types and views to support Silexn theme.
+description = Provides Content Types and views to support the Silex theme.
 core = 7.x
 package = Features
 php = 5.2.4
