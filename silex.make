@@ -44,6 +44,9 @@ projects[paragraphs][subdir] = "contrib"
 projects[link][version] = "1.4"
 projects[link][subdir] = "contrib"
 
+projects[field_group][version] = "1.5"
+projects[field_group][subdir] = "contrib"
+
 ; Themes
 projects[bootstrap][type] = "theme"
 projects[bootstrap][subdir] = "silex_theme"

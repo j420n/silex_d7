@@ -37,5 +37,6 @@ dependencies[] = features
 dependencies[] = views_ui
 dependencies[] = silex_content
 dependencies[] = link
+dependencies[] = field_group
 
 files[] = silex.profile
