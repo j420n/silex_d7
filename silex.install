@@ -15,6 +15,7 @@ function silex_install() {
   $default_theme = 'silex_theme';
   $admin_theme = 'silex_theme';
 
+  theme_disable(array('bartik'));
   // disable all themes
   //db_update('system')
   //    ->fields(array('status' => 0))
@@ -47,7 +48,6 @@ function silex_install() {
   );
 
   theme_enable($enabled_themes);
-
 
   //Disable overlay module
   module_disable(array('overlay'),TRUE);
