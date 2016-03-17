@@ -537,3 +537,17 @@ function silex_install() {
   menu_rebuild();
 
 }
+
+function silex_finished_install(&$install_state) {
+    # Copy default files needed.
+    $source = DRUPAL_ROOT . '/profiles/silex/files';
+    $destination = DRUPAL_ROOT . '/sites/default/files';
+    md_boom_copy_directory($source, $destination);
+    _drupal_flush_css_js();
+    // Flush the cache of all data for the update status module.
+    if (db_table_exists('cache_update')) {
+      cache_clear_all('*', 'cache_update', TRUE);
+    }
+    $output = '<p>' .  st('Congratulations, you installed the Silex Theme.<br /><a href="@url">Visit your new site</a>.', array('@url' => url(''))) . '</p>';
+    return $output;
+}
